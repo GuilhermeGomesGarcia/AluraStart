@@ -7,8 +7,8 @@
   --font-size-xl: 3.75rem; /* 60px */
   --font-size-l: 2rem; /* 32px */
   --font-size-m: 1.25rem; /* 20px */
-  --font-size-s: 1rem; /* 16px */
-  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-b: 1rem; /* 16px */
+  --font-size-s: 0.75rem; /* 12px */
 
   /* Cores */
   --cor-texto: #6e859f;
@@ -47,7 +47,7 @@ h3,
 h4,
 h5 {
   font-family: var(--fonte-titulos);
-  font-size: 60px;
+  font-size: var(--font-size-xl);
   font-weight: 700;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .cabecalho__item > a {
-  font-size: 16px;
+  font-size: var(--font-size-b);
   font-weight: 500;
   color: var(--cor-texto);
   text-decoration: none;
@@ -101,7 +101,7 @@ body {
 }
 
 .cabecalho__botoes > a {
-  font-size: 12px;
+  font-size: var(--font-size-s);
 }
 
 .cabecalho__divisor {
@@ -118,7 +118,7 @@ body {
   padding: var(--padding-xs) var(--padding-l);
   border: none;
   border-radius: 200px;
-  font-size: 16px;
+  font-size: var(--font-size-b);
   font-weight: 600;
 }
 
@@ -167,7 +167,7 @@ body {
 
 .banner__descricao {
   color: var(--cor-texto);
-  font-size: 20px;
+  font-size: var(--font-size-m);
 }
 
 .quem-somos {
@@ -237,7 +237,7 @@ body {
   width: 33.33%;
 
   & > h3 {
-    font-size: 20px;
+    font-size: var(--font-size-m);
     text-transform: uppercase;
     padding: var(--padding-m) 0;
   }
@@ -256,7 +256,7 @@ body {
 
   & > p {
     color: var(--cor-texto);
-    font-size: 20px;
+    font-size: var(--font-size-m);
   }
 }
 
@@ -293,7 +293,7 @@ body {
   gap: var(--gap-l);
 
   & > div > h3 {
-    font-size: 32px;
+    font-size: var(--font-size-l);
     font-weight: 700;
     padding-bottom: var(--padding-xs);
   }
@@ -449,7 +449,7 @@ body {
   & > h3 {
     font-family: var(--fonte-corpo);
     font-weight: 700;
-    font-size: 20px;
+    font-size: var(--font-size-m);
   }
 }
 
@@ -545,7 +545,7 @@ body {
 
   & > h3 {
     color: var(--cor-titulo-vermelho);
-    font-size: 20px;
+    font-size: var(--font-size-m);
     text-align: center;
   }
 }
@@ -614,7 +614,7 @@ body {
 
   & > h4 {
     color: var(--cor-texto);
-    font-size: 16px;
+    font-size: var(--font-size-b);
   }
 
   & > a {
