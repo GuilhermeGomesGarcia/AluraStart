@@ -3,6 +3,13 @@
   --fonte-corpo: "Inter", sans-serif;
   --fonte-titulos: "Bai Jamjuree", sans-serif;
 
+  /* Tipografia */
+  --font-size-xl: 3.75rem; /* 60px */
+  --font-size-l: 2rem; /* 32px */
+  --font-size-m: 1.25rem; /* 20px */
+  --font-size-s: 1rem; /* 16px */
+  --font-size-xs: 0.75rem; /* 12px */
+
   /* Cores */
   --cor-texto: #6e859f;
   --cor-texto-branco: #ffffff;
@@ -18,7 +25,7 @@
   --botao-gradiente: linear-gradient(90deg, #c75eeb, #f6543b);
   --botao-gradiente-hover: linear-gradient(90deg, #560d6e, #560d6e);
 
-   --padding-2xs: 0.5rem; /* 8px */
+  --padding-2xs: 0.5rem; /* 8px */
   --padding-xs: 0.875rem; /* 14px */
   --padding-s: 1rem; /* 16px */
   --padding-m: 1.5rem; /* 24px */
