@@ -59,6 +59,10 @@ body {
 .container {
   width: 1192px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 674px;
+  }
 }
 
 .cabecalho {
@@ -90,14 +94,36 @@ body {
   text-decoration: none;
   transition: 0.2s ease-in;
 
+  @media screen and (max-width: 768px) {
+    font-size: var(--font-size-s);
+  }
+
   &:hover {
     color: var(--cor-destaque-roxo);
+  }
+}
+
+.cabecalho__item:nth-child(6) {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: inline;
   }
 }
 
 .cabecalho__botoes {
   display: flex;
   gap: var(--gap-s);
+
+  @media screen and (max-width: 768px) {
+    & > a.btn__primario {
+      text-align: center;
+    }
+
+    & > a.btn__secundario {
+      display: none;
+    }
+  }
 }
 
 .cabecalho__botoes > a {
