@@ -49,6 +49,12 @@ h5 {
   font-family: var(--fonte-titulos);
   font-size: var(--font-size-xl);
   font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    &:not(h1){
+      font-size: var(--font-size-l);
+    }
+  }
 }
 
 body {
@@ -59,6 +65,10 @@ body {
 .container {
   width: 1192px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 674px;
+  }
 }
 
 .cabecalho {
@@ -90,14 +100,36 @@ body {
   text-decoration: none;
   transition: 0.2s ease-in;
 
+  @media screen and (max-width: 768px) {
+    font-size: var(--font-size-s);
+  }
+
   &:hover {
     color: var(--cor-destaque-roxo);
+  }
+}
+
+.cabecalho__item:nth-child(6) {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: inline;
   }
 }
 
 .cabecalho__botoes {
   display: flex;
   gap: var(--gap-s);
+
+  @media screen and (max-width: 768px) {
+    & > a.btn__primario {
+      text-align: center;
+    }
+
+    & > a.btn__secundario {
+      display: none;
+    }
+  }
 }
 
 .cabecalho__botoes > a {
@@ -147,6 +179,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 5.5rem 0;
+
+  @media screen and (max-width: 768px) {
+    & > .banner__imagem {
+      display: none;
+    }
+  }
 }
 
 .banner__texto-principal {
@@ -154,6 +192,12 @@ body {
   flex-direction: column;
   gap: var(--gap-xl);
   align-items: self-start;
+
+  @media screen and (max-width: 768px){
+    align-items: center;
+    text-align: center;
+    padding: 0 5.5rem;
+  }
 }
 
 .banner__titulo {
@@ -174,6 +218,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 7rem 0;
+
+  @media screen and (max-width: 768px) {
+    padding: var(--padding-xl) 0;
+    flex-direction: row-reverse;
+  }
 }
 
 .quem-somos__texto-principal {
